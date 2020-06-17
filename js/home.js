@@ -85,13 +85,13 @@ export default function define(e, n) {
 		a.variable(n('settings')).define('settings', function() {
 			return {
 				numGradientsPerSet: 1,
-				scaleMin: 0.75,
-				scaleMax: 1.5,
-				fociMin: 0.1,
-				fociMax: 0.3,
+				scaleMin: 0.5,
+				scaleMax: 1,
+				fociMin: 0.2,
+				fociMax: 0.5,
 				translateMin: 0.1,
 				translateMax: 0.4,
-				skewMax: 10
+				skewMax: 20
 			};
 		}),
 		a.variable(n('w')).define('w', function() {

@@ -35,14 +35,16 @@
   <body>
 
 
-<!-- START OF: Header =====-->
-<header class="header-1 position-relative" style= "background-color:gray" >     <!--style="background-image: url(img/photos/robot-01.jpg)"> -->
+<div class="app-root">
 
-  <nav class="nav-1">
-    <div class="container">
-      <div class="nav-box">
+<!-- START OF: Header =====-->
+<div class="header-container-nav">
+
+  <header class="header-1">     <!--style="background-image: url(img/photos/robot-01.jpg)"> -->
+
+    <nav class="nav-1">
         
-        <span id="logos-01">
+        <div class="logos">
           <div class="nav-logo">
             <a class="nav-link" href="/">
               <img class="nav-logo-img"   src="/img/other/logo-sk.svg" alt="Logo"/>
@@ -53,13 +55,13 @@
               <span class="nav-logo-text white-text larger-text">AI4CC</span>
             </a>
           </div>
-        </span>
+        </div>
         <div class="nav-all-links">
           <ul class="nav-links">
-            <li><a class="nav-item color-white" href="/"> About</a></li>
+            <li><a class="nav-item color-white" href="#"> About</a></li>
             <li><a class="nav-item color-white" href="/people/"> Our Team</a></li>
-            <li><a class="nav-item color-white" href="/"> Our Work</a></li>
-            <li><a class="nav-item color-white" id="last-nav-item" href="/blog/"> Blog</a></li>
+            <li><a class="nav-item color-white" href="#"> Our Work</a></li>
+            <li><a class="nav-item color-white" id="last-nav-item" href="#"> Blog</a></li>
           </ul>
         </div>
 
@@ -69,17 +71,25 @@
           <span class="bg-white"></span>
           <span class="bg-white"></span>
         </div>
-      </div>
-    </div>
-  </nav>
+    </nav>
+
+  </header>
+
+  <div class="position-absolute w-100 h-100 overflow-hidden bg-cool-gray-1 bg-cover trbl-0" style="z-index:-1;pointer-events:none">
+    <div id="gradient" class="position-absolute d-flex justify-content-center align-items-center overflow-hidden trbl-0 observablehq--running" style="z-index:-1;pointer-events:none"></div>
+  </div>
+
+</div>
+
+<div class="all-content">
 
 
   <div class="header-window">
-    <div class="container color-white">
+    <div class="container white-text">
       <hr class="hr-strong">
       <section class="header-pm header-container">
-        <div class="header-headline mb-1"><h1 class="color-white font-normal">Our Goal:</h1></div>
-        <div class="header-explanation mt-2"> <h1 class="color-white balance-text font-normal" style="margin-left:-0.1rem;max-width:28rem">To bring state-of-the-art machine learning algorimths to critically ill patients.</h1> </div>
+        <div class="header-headline mb-1"><h1 class="white-text font-normal">Our Goal:</h1></div>
+        <div class="header-explanation mt-1"> <h1 class="white-text balance-text font-normal" style="margin-left:-0.1rem;max-width:28rem">To bring state-of-the-art machine learning algorimths to critically ill patients.</h1> </div>
         </section>
     </div>
   </div>
@@ -92,81 +102,167 @@
       <div class="header-card-headline"><h2 class="color-white font-normal">Our Recent Works</h2></div>
       </div>
     </div>
-      <div class="overflow-hidden">
-        <div class="overflow-x-auto mb-n2 pb-2">
-          <div class="cards flex-nowrap">
-            <div class="card-item publication__cover">
-              <a href="http://www.google.com">
-              <div class="card">
-                <div class="card-header">
-                  <h3>Sound generator</h3>
-                </div>
-                <div class="card-image position-relative green-bg" style="padding-bottom:100%">
-                  <img class="position-absolute trbl-0"
-           src="https://images.unsplash.com/photo-1528310263469-da619c84a9a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1284&q=80"
-           alt="Card-1">
-                </div>
-              </div>
-              </a>
-            </div>
-      
-            <div class="card-item publication__cover">
-              <a href="http://www.google.com">
-              <div class="card">
-                <div class="card-header">
-                  <h3>Artificial Intelligence</h3>
-                </div>
-                <div class="card-image position-relative green-bg" style="padding-bottom:100%">
-                  <img class="position-absolute trbl-0"
-           src="https://images.unsplash.com/photo-1516192518150-0d8fee5425e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=976&q=80"
-           alt="Card-2">
-                </div>
-              </div>
-              </a>
-            </div>
-      
-            <div class="card-item publication__cover">
-              <a href="http://www.google.com">
-              <div class="card">
-                <div class="card-header">
-                  <h3>Virtual Reality</h3>
-                </div>
-                <div class="card-image position-relative green-bg" style="padding-bottom:100%">
-                  <img class="position-absolute trbl-0"
-           src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
-           alt="Card-3">
-                </div>
-              </div>
-              </a>
-            </div>
+
+    <div class="overflow-hidden">
+      <div class="accordion overflow-x-auto mb-n2 pb-n2">
+
+        <input class="tab-toggle" type="radio" name="tabs-card" id="tab_one" checked/>
+        <label for="tab_one">
+          <span class="tab-title">Application</span>
+          <div class="tab" id="tab_one_wrapper">
+
+
+            <div class="overflow-hidden">
+              <div class="overflow-x-auto mb-n2 pb-2">
+                <div class="cards flex-nowrap">
+                  <div class="card-item publication__cover">
+                    <a href="http://www.google.com">
+                    <div class="card">
+                      <div class="card-header">
+                        <h3>Sound generator</h3>
+                      </div>
+                      <div class="card-image position-relative green-bg" style="padding-bottom:100%">
+                        <img class="position-absolute trbl-0"
+                src="https://images.unsplash.com/photo-1528310263469-da619c84a9a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1284&q=80"
+                alt="Card-1">
+                      </div>
+                    </div>
+                    </a>
+                  </div>
             
-            <div class="card-item publication__cover">
-              <a href="http://www.google.com">
-              <div class="card">
-                <div class="card-header">
-                  <h3>Deep Learning</h3>
-                </div>
-                <div class="card-image position-relative" style="padding-bottom:100%">
-                  <img class="position-absolute trbl-0"
-           src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=933&q=80"
-           alt="Card-4">
+                  <div class="card-item publication__cover">
+                    <a href="http://www.google.com">
+                    <div class="card">
+                      <div class="card-header">
+                        <h3>Artificial Intelligence</h3>
+                      </div>
+                      <div class="card-image position-relative green-bg" style="padding-bottom:100%">
+                        <img class="position-absolute trbl-0"
+                src="https://images.unsplash.com/photo-1516192518150-0d8fee5425e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=976&q=80"
+                alt="Card-2">
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+            
+                  <div class="card-item publication__cover">
+                    <a href="http://www.google.com">
+                    <div class="card">
+                      <div class="card-header">
+                        <h3>Virtual Reality</h3>
+                      </div>
+                      <div class="card-image position-relative green-bg" style="padding-bottom:100%">
+                        <img class="position-absolute trbl-0"
+                src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+                alt="Card-3">
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  
+                  <div class="card-item publication__cover">
+                    <a href="http://www.google.com">
+                    <div class="card">
+                      <div class="card-header">
+                        <h3>Deep Learning</h3>
+                      </div>
+                      <div class="card-image position-relative" style="padding-bottom:100%">
+                        <img class="position-absolute trbl-0"
+                src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=933&q=80"
+                alt="Card-4">
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  
                 </div>
               </div>
-              </a>
             </div>
-            
+
           </div>
-        </div>
+        </label>
+
+        <input class="tab-toggle" type="radio" name="tabs-card" id="tab_two" />
+        <label for="tab_two">
+          <span class="tab-title">Algorithms</span>
+          <div class="tab" id="tab_two_wrapper">
+
+            <div class="overflow-hidden">
+              <div class="overflow-x-auto mb-n2 pb-2">
+                <div class="cards flex-nowrap">
+                  <div class="card-item publication__cover">
+                    <a href="http://www.google.com">
+                    <div class="card">
+                      <div class="card-header">
+                        <h3>Machine Learning</h3>
+                      </div>
+                      <div class="card-image position-relative green-bg" style="padding-bottom:100%">
+                        <img class="position-absolute trbl-0"
+                src="https://images.unsplash.com/photo-1528310263469-da619c84a9a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1284&q=80"
+                alt="Card-1">
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+            
+                  <div class="card-item publication__cover">
+                    <a href="http://www.google.com">
+                    <div class="card">
+                      <div class="card-header">
+                        <h3>Neural Networks</h3>
+                      </div>
+                      <div class="card-image position-relative green-bg" style="padding-bottom:100%">
+                        <img class="position-absolute trbl-0"
+                src="https://images.unsplash.com/photo-1516192518150-0d8fee5425e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=976&q=80"
+                alt="Card-2">
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+            
+                  <div class="card-item publication__cover">
+                    <a href="http://www.google.com">
+                    <div class="card">
+                      <div class="card-header">
+                        <h3>Natural Language Processing</h3>
+                      </div>
+                      <div class="card-image position-relative green-bg" style="padding-bottom:100%">
+                        <img class="position-absolute trbl-0"
+                src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+                alt="Card-3">
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  
+                  <div class="card-item publication__cover">
+                    <a href="http://www.google.com">
+                    <div class="card">
+                      <div class="card-header">
+                        <h3>Fuzzy Learning</h3>
+                      </div>
+                      <div class="card-image position-relative" style="padding-bottom:100%">
+                        <img class="position-absolute trbl-0"
+                src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=933&q=80"
+                alt="Card-4">
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </label>
+
       </div>
-    
+    </div>
   </div>
 
 
-  <div class="position-absolute w-100 h-100 overflow-hidden bg-cool-gray-1 bg-cover trbl-0" style="z-index:-1;pointer-events:none">
-      <div id="gradient" class="position-absolute d-flex justify-content-center align-items-center overflow-hidden trbl-0 observablehq--running" style="z-index:-1;pointer-events:none"></div>
-  </div>
 
-  </header>
 <main>
   <section class="mt-2 mb-1">
     <div class="container projects-1">
@@ -177,8 +273,57 @@
       </div>
     </div>
 
-</section>
+  </section>  
+
+  <section class="mt-2 mb-1">
+    <div class="container projects-1">
+      <h1>Other Projects</h1>
+      <hr class="hr-strong">
+      <div class="project-explanation mt-2 mb-1">
+        <p>New projects are coming</p>
+      </div>
+    </div>
+
+  </section>  
+
+  <section class="mt-2 mb-1">
+    <div class="container projects-1">
+      <h1>Other Projects</h1>
+      <hr class="hr-strong">
+      <div class="project-explanation mt-2 mb-1">
+        <p>New projects are coming</p>
+      </div>
+    </div>
+
+  </section>  
+
+  <section class="mt-2 mb-1">
+    <div class="container projects-1">
+      <h1>Other Projects</h1>
+      <hr class="hr-strong">
+      <div class="project-explanation mt-2 mb-1">
+        <p>New projects are coming</p>
+      </div>
+    </div>
+
+  </section>  
+
+  <section class="mt-2 mb-1">
+    <div class="container projects-1">
+      <h1>Other Projects</h1>
+      <hr class="hr-strong">
+      <div class="project-explanation mt-2 mb-1">
+        <p>New projects are coming</p>
+      </div>
+    </div>
+
+  </section>  
 </main>
+
+</div>
+
+</div>
+
 
 <script type="module">
   import {Runtime, Inspector, Library} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
@@ -195,6 +340,7 @@
   }
   });
 </script>
+
 
 
 

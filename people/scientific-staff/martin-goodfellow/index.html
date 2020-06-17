@@ -5,6 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/app.css">
 
+    <style>
+      .observablehq {
+          opacity: 1;
+          transition: opacity 250ms ease-in-out;
+      }
+
+      .browser-firefox .observablehq {
+          transition: opacity 250ms ease-in-out 250ms;
+      }
+
+      .observablehq--running {
+          opacity: 0;
+      }
+
+      .os-ios #gradient {
+          filter: saturate(150%);
+          -webkit-filter: saturate(150%);
+      }
+  </style>
+
     <script src="/js/main.js" defer></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Lora" rel="stylesheet">
     <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32" />
@@ -14,136 +34,156 @@
   </head>
   <body>
 
+    <div class="app-root">
 
 
-<!-- START OF: Header =====-->
-<header class="header-1 position-relative" >     <!--style="background-image: url(img/photos/robot-01.jpg)"> -->
+  <!-- START OF: Header =====-->
+  <div class="header-container-nav">
 
-  <nav class="nav-1">
-    <div class="container">
-      <div class="nav-box">
-        
-        <span id="logos-01">
-          <div class="nav-logo">
-            <a class="nav-link" href="/">
-              <img class="nav-logo-img"   src="/img/other/logo-sk.svg" alt="Logo"/>
-            </a>
+    <header class="header-1">     <!--style="background-image: url(img/photos/robot-01.jpg)"> -->
+
+      <nav class="nav-1">
+          
+          <div class="logos">
+            <div class="nav-logo">
+              <a class="nav-link" href="/">
+                <img class="nav-logo-img"   src="/img/other/logo-sk.svg" alt="Logo"/>
+              </a>
+            </div>
+            <div class="nav-logo">
+              <a class="nav-link" href="/">
+                <span class="nav-logo-text white-text larger-text">AI4CC</span>
+              </a>
+            </div>
           </div>
-          <div class="nav-logo">
-            <a class="nav-link" href="/">
-              <span class="nav-logo-text larger-text">AI4CC</span>
-            </a>
+          <div class="nav-all-links">
+            <ul class="nav-links">
+              <li><a class="nav-item color-white" href="#"> About</a></li>
+              <li><a class="nav-item color-white" href="/people/"> Our Team</a></li>
+              <li><a class="nav-item color-white" href="#"> Our Work</a></li>
+              <li><a class="nav-item color-white" id="last-nav-item" href="#"> Blog</a></li>
+            </ul>
           </div>
-        </span>
-        <div class="nav-all-links">
-          <ul class="nav-links">
-            <li><a class="nav-item" href="#"> About</a></li>
-            <li><a class="nav-item" href="team.html"> Our Team</a></li>
-            <li><a class="nav-item" href="#"> Our Work</a></li>
-            <li><a class="nav-item" id="last-nav-item" href="blog.html"> Blog</a></li>
-          </ul>
-        </div>
 
-        <div id="nav-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
+          <div id="nav-icon" >
+            <span class="bg-white"></span>
+            <span class="bg-white"></span>
+            <span class="bg-white"></span>
+            <span class="bg-white"></span>
+          </div>
+      </nav>
+
+    </header>
+
+    <div class="position-absolute w-100 h-100 overflow-hidden bg-cool-gray-1 bg-cover trbl-0" style="z-index:-1;pointer-events:none">
+      <div id="gradient" class="position-absolute d-flex justify-content-center align-items-center overflow-hidden trbl-0 observablehq--running" style="z-index:-1;pointer-events:none"></div>
     </div>
-  </nav>
 
+  </div>
 
-  </header>
+  <div class="all-content">
+  <main>
 
-  
-<main>
+    <section class="mt-2 mb-1">
+      <div class="container">
+        <hr class="hr-strong">
 
-  <section class="mt-2 mb-1">
-    <div class="container">
-      <hr class="hr-strong">
-
-      <div class="container container-staff bg-yellow">
-        <div class="Headline">
-          <h1> Martin Goodfellow</h1>
-        </div>
-        <hr class="hr-bold">
-        
-        <div class="staff">
-          <div class="staff-details bg-green">
-            <div class="staff-content bg-blue">
-              <div class="staff-imholder mb-2">
-                <div class="staff-image position-relative">
-                      <a href="/people/scientific-staff/martin-goodfellow/">
-                      <img class=""
-                src="https://images.unsplash.com/photo-1548449112-96a38a643324?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
-                alt="Martin Goodfellow"></a>
+        <div class="container container-staff bg-yellow">
+          <div class="Headline">
+            <h1> Martin Goodfellow</h1>
+          </div>
+          <hr class="hr-bold">
+          
+          <div class="staff">
+            <div class="staff-details bg-green">
+              <div class="staff-content bg-blue">
+                <div class="staff-imholder mb-2">
+                  <div class="staff-image position-relative">
+                        <a href="/people/scientific-staff/martin-goodfellow/">
+                        <img class=""
+                  src="https://images.unsplash.com/photo-1548449112-96a38a643324?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+                  alt="Martin Goodfellow"></a>
+                  </div>
+                </div>
+                <div id="c13" class="">
+                  <h2> Thesis & Student Jobs </h2>
+                  
+                  <p> Students who are interested in a MsC thesis are asked to make an appointment with me. Please send me an email and attach your your CV.</p>
+                  
+                  <p> I have couple of thesis projets at the moment. If you are interested, please contact me.</p>
+                </div>
+                <div id="c14" class="">
+                  <h2 class="teaching"> Students</h2>
+                  <h4> Student Assistants:</h4>
+                  <ul>
+                    <li><a href="#">Goerge Corn</a></li>
+                    <li>Mike Hawk</li>
+                    <li>Micheal Steph</li>
+                  </ul>
                 </div>
               </div>
-              <div id="c13" class="">
-                <h2> Thesis & Student Jobs </h2>
-                
-                <p> Students who are interested in a MsC thesis are asked to make an appointment with me. Please send me an email and attach your your CV.</p>
-                
-                <p> I have couple of thesis projets at the moment. If you are interested, please contact me.</p>
-              </div>
-              <div id="c14" class="">
-                <h2 class="teaching"> Students</h2>
-                <h4> Student Assistants:</h4>
-                <ul>
-                  <li><a href="#">Goerge Corn</a></li>
-                  <li>Mike Hawk</li>
-                  <li>Micheal Steph</li>
-                </ul>
-              </div>
             </div>
-          </div>
-          <div class="staff-more-info bg-pink">
-            <div class="staff-card bg-gray">
-                        <h2> <a href="http://www.google.com"> Martin Goodfellow</a></h2>
-                        <h3> <strong>Scientific Staff</strong> </h3>
-                        <br>
-                      <a href="https://www.ice.rwth-aachen.de/institute/location/" class="room">
-                    Room: 234</a><br>
-                      
-                        <a href="tel:+49 242 82-32301" target="_blank" class="phone">+49&nbsp;241&nbsp;80-14311</a><br>
+            <div class="staff-more-info bg-pink">
+              <div class="staff-card bg-gray">
+                          <h2> <a href="http://www.google.com"> Martin Goodfellow</a></h2>
+                          <h3> <strong>Scientific Staff</strong> </h3>
+                          <br>
+                        <a href="https://www.ice.rwth-aachen.de/institute/location/" class="room">
+                      Room: 234</a><br>
                         
-                          <a class="mail" href="javascript:linkTo_UnCryptMailto(%27ftbemh3atkbl7ztvtgbgTbvx7kpma6ttvaxg7wx%27);">martina.goofray(at)ice.rwth-aachen.de</a><br />
-            </div>
-            <div id="c15" class="">
-              <h2 class=" jobs">Biography</h2>
+                          <a href="tel:+49 242 82-32301" target="_blank" class="phone">+49&nbsp;241&nbsp;80-14311</a><br>
+                          
+                            <a class="mail" href="mailto:martin.goodfellow@rwth-aachen.de">martin.goodfellow(at)ice.rwth-aachen.de</a><br />
+              </div>
+              <div id="c15" class="">
+                <h2 class=" jobs">Biography</h2>
 
-              <p>Martin Goodfellow received his B.Sc. and M.Sc. degree in Electrical Engineering from ETH Zurich in 2012 and 2015 respectively. Since 2015, he is a PhD student at the Computer Engineering Department under the supervision of Prof. Mike Johnson. His research focus is the modeling Convolutional Neural Networks.</p>
-            </div>
-            <div id="c16" class="">
-              <h2 class="publications">Publications</h2>
-                <div class="all-publications">
-                  <p><a href="#">George, L.</a>, Bölke, J. Hoffmann, C. and <a href="#">Kouter, R.</a>: <a href="#"><strong><em> A Generic Analytical Model for Deep Learning,</em></strong></a> in
-                                      <em>Proceedings of the Conference on Machine Learning &amp; (DATE)</em> 2020, accepted for publication &copy;2020&nbsp;IEEE
-                                  </p><br />
-                  <p><a href="#">Jünger, L.</a>, Micheal, N., John, T., Henry, H. and <a href="#">Samuel, R.</a>:<a href="#"><strong><em> A Generic Analytical Model for Deep Learning Accelerators,</em></strong></a> in
-                                      <em>International Conference on Embedded Computer Systems</em>,
-                                      2020, accepted for publication
-                                  </p>
+                <p>Martin Goodfellow received his B.Sc. and M.Sc. degree in Electrical Engineering from ETH Zurich in 2012 and 2015 respectively. Since 2015, he is a PhD student at the Computer Engineering Department under the supervision of Prof. Mike Johnson. His research focus is the modeling Convolutional Neural Networks.</p>
+              </div>
+              <div id="c16" class="">
+                <h2 class="publications">Publications</h2>
+                  <div class="all-publications">
+                    <p><a href="#">George, L.</a>, Bölke, J. Hoffmann, C. and <a href="#">Kouter, R.</a>: <a href="#"><strong><em> A Generic Analytical Model for Deep Learning,</em></strong></a> in
+                                        <em>Proceedings of the Conference on Machine Learning &amp; (DATE)</em> 2020, accepted for publication &copy;2020&nbsp;IEEE
+                                    </p><br />
+                    <p><a href="#">Jünger, L.</a>, Micheal, N., John, T., Henry, H. and <a href="#">Samuel, R.</a>:<a href="#"><strong><em> A Generic Analytical Model for Deep Learning Accelerators,</em></strong></a> in
+                                        <em>International Conference on Embedded Computer Systems</em>,
+                                        2020, accepted for publication
+                                    </p>
+                </div>
               </div>
             </div>
           </div>
+          
+          
+          
         </div>
-        
-        
-        
+
+
+
+  <!-- end -->
       </div>
+    </section>
+  </main>
+  </div>
 
+</div>
 
-
-<!-- end -->
-    </div>
-  </section>
-</main>
-
-
-
+<script type="module">
+  import {Runtime, Inspector, Library} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+  import notebook from "/js/home.js";
+  const renders = {
+  "gradient": "#gradient",
+  };
+  new Runtime(Object.assign(new Library)).module(notebook, name => {
+  const selector = renders[name];
+  if (selector) { // key exists
+      return new Inspector(document.querySelector(selector));
+  } else {
+      return true;
+  }
+  });
+</script>
 
   </body>
 </html>
