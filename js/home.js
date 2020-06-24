@@ -85,10 +85,10 @@ export default function define(e, n) {
 		a.variable(n('settings')).define('settings', function() {
 			return {
 				numGradientsPerSet: 1,
-				scaleMin: 0.5,
-				scaleMax: 1,
-				fociMin: 0.2,
-				fociMax: 0.5,
+				scaleMin: 0.2,
+				scaleMax: 0.6,
+				fociMin: 0.1,
+				fociMax: 0.3,
 				translateMin: 0.1,
 				translateMax: 0.4,
 				skewMax: 20

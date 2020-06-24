@@ -1,0 +1,77 @@
+//publication part
+
+.publication-window {
+	.publication-container {
+		max-width: 680px;
+		margin: auto;
+	}
+
+	.publication-pm {
+		margin-top: 2rem;
+		margin-bottom: 3rem;
+	}
+
+	.post-header {
+		margin-bottom: 10px;
+	}
+
+	.post h2 a {
+		text-decoration: none;
+
+		&:hover {
+			color: $selectedColor;
+		}
+	}
+
+	.publish-date {
+		font-size: .6rem;
+		letter-spacing: 0.2rem;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: rgba(0, 0, 0, .54);
+	}
+
+	.post-body {
+		width: 100%;
+
+		.post-author {
+			color: rgba(0, 0, 0, .54);
+			font-size: 14px;
+			margin-bottom: 20px;
+		}
+
+		.post-content {
+			font-size: 15px;
+			line-height: 20px;
+			color: $publicationColor;
+			word-break: break-word;
+			word-wrap: break-word;
+			br {
+				display: block;
+				padding: 4px;
+			}
+
+			p {
+				margin: 10px 0;
+			}
+
+			strong {
+				margin: 5px 0;
+			}
+
+			img {
+				// display: block;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				background-repeat: no-repeat;
+				overflow: hidden;
+				object-fit: cover;
+				max-width: inherit;
+				height: auto;
+				width: auto;
+			}
+		}
+	}
+}
