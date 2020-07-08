@@ -1,9 +1,44 @@
 //publication part
 
 .publication-window {
+	.container {
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 1380px;
+		width: 90%;
+	}
+
+	@media (min-width: $mobileSize) {
+		.container {
+			width: 93%;
+		}
+	}
+
 	.publication-container {
-		max-width: 680px;
-		margin: auto;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.post {
+		position: relative;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	@media (min-width: $mobileSize) {
+		.post {
+			margin-left: 0%;
+			flex: 00 75%;
+			max-width: 75%;
+		}
+	}
+
+	@media (min-width: $xLargeSize) {
+		.post {
+			flex: 0 0 50%;
+			margin-left: 25%;
+			max-width: 50%;
+		}
 	}
 
 	.publication-pm {
@@ -38,6 +73,10 @@
 			color: rgba(0, 0, 0, .54);
 			font-size: 14px;
 			margin-bottom: 20px;
+
+			a {
+				color: inherit;
+			}
 		}
 
 		.post-content {
@@ -59,6 +98,11 @@
 				margin: 5px 0;
 			}
 
+			.img-holder {
+				width: inherit;
+				overflow: hidden;
+			}
+
 			img {
 				// display: block;
 				margin-left: auto;
@@ -67,11 +111,83 @@
 				margin-bottom: 10px;
 				background-repeat: no-repeat;
 				overflow: hidden;
-				object-fit: cover;
+				object-fit: scale-down;
 				max-width: inherit;
 				height: auto;
 				width: auto;
 			}
+
+			li a {
+				text-decoration: none;
+				color: $fg-50;
+			}
 		}
+	}
+
+	@media (min-width: $mobileSize) {
+		.aside {
+			position: absolute;
+			transform: translatex(100%);
+			right: 0;
+			padding: 0 .75rem;
+			width: 40%;
+			overflow: hidden;
+		}
+	}
+
+	.footnote-aside {
+		padding: 0 .75rem;
+		position: absolute;
+		width: 20%;
+		right: 0;
+		transform: translateX(100%);
+		letter-spacing: 0.1em;
+		color: $fg-50;
+		font-size: 0.9em;
+		display: none;
+	}
+
+	@media (min-width: $mobileSize) {
+		.footnote-aside {
+			width: 30%;
+			display: block;
+		}
+	}
+
+	@media (min-width: $xLargeSize) {
+		.footnote-aside {
+			width: 50%;
+		}
+	}
+
+	@media (min-width: $xLargeSize) {
+		.aside {
+			padding: 0 .75rem;
+			position: absolute;
+			width: 30%;
+			left: 0;
+			transform: translateX(-100%);
+		}
+	}
+
+	.list-indented {
+		padding-left: 1em !important;
+	}
+
+	.footnotes {
+		padding: 0 .75rem;
+		letter-spacing: 0.1em;
+		color: $fg-50;
+		font-size: 0.9em;
+	}
+
+	.footnote-ref {
+		margin: 0 0.05rem;
+	}
+
+	.sup {
+		line-height: 0;
+		position: relative;
+		vertical-align: baseline;
 	}
 }

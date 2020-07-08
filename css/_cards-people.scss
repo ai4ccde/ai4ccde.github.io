@@ -1,0 +1,52 @@
+//cards for people
+
+.card-people-image img {
+	max-width: 100%;
+	display: block;
+}
+
+.cards-people {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+	flex-wrap: wrap;
+}
+
+.card-people-item {
+	flex: 1 0 46%;
+	padding: 1rem 0.5rem;
+	margin: 1rem 0.5rem;
+	background-color: #fafafa;
+	box-shadow: 0 3px 6px $cardPeopleBoxShadow, 0 3px 3px $cardPeopleBoxShadow2;
+}
+
+.card-people-content {
+	display: flex;
+}
+
+.card-people-info {
+	flex: 0 1 75%;
+	margin-left: 1rem;
+	line-height: 150%;
+}
+
+@media (max-width: $mobileSize) {
+	.card-people-content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.card-people-info {
+		margin: 1rem 0rem;
+	}
+
+	.card-people-item {
+		flex: 1 0 46%;
+		padding: 1rem;
+	}
+}
+
+.card-people-imholder {
+	flex: 0 1 25%;
+	overflow: hidden;
+}

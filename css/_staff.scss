@@ -1,0 +1,180 @@
+// staff page CSS
+.staff {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+	flex-wrap: wrap;
+}
+
+.container-staff {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media (max-width: 900px) {
+	.staff {
+		flex-direction: column;
+	}
+}
+
+@media (min-width: 901px) {
+	.container-staff {
+		width: 870px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container-staff {
+		width: 1170px;
+	}
+}
+
+.staff-details {
+	order: 2;
+	flex: 1;
+	padding: 1rem 0.5rem;
+	margin: 1rem 0.5rem;
+}
+
+.staff-more-info {
+	order: 1;
+	flex: 2;
+	padding: 1rem 0.5rem;
+	margin: 1rem 0.5rem;
+}
+
+.staff-content {
+	display: flex;
+	justify-content: start;
+	padding: 1rem;
+	flex-direction: column;
+}
+
+.staff h2 {
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: rgba(0, 0, 0, 0.6);
+	padding-bottom: 2px;
+}
+
+.staff-imholder {
+	overflow: hidden;
+}
+
+.staff-image img {
+	max-width: 100%;
+	display: block;
+}
+
+@media (max-width: 900px) {
+	.staff-image img {
+		width: 250px;
+		height: 350px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.staff-details {
+		padding: 0;
+		order: 1;
+	}
+
+	.staff-more-info {
+		padding: 0;
+		order: 2;
+	}
+}
+
+.staff-content ul {
+	list-style: none;
+	list-style-type: none;
+}
+
+.staff a {
+	color: black;
+}
+
+.staff-content a:hover {
+	opacity: 0.6;
+}
+
+.staff-more-info {
+	margin-left: 1rem;
+	line-height: 150%;
+}
+
+@media screen {
+	main .icon-room:before,
+	main .room:before {
+		content: "";
+		display: inline-block;
+		background: url("https://img.icons8.com/ios/50/000000/link-company-parent.png") no-repeat left center;
+		background-size: .8em;
+		padding-right: 15px;
+		height: .8em;
+		width: .8em;
+	}
+}
+
+@media screen {
+	main .icon-phone:before,
+	main .phone:before {
+		content: "";
+		display: inline-block;
+		background: url("https://img.icons8.com/metro/26/000000/phone.png") no-repeat left center;
+		background-size: 0.8em;
+		padding-right: 15px;
+		height: .8em;
+		width: .8em;
+	}
+}
+
+@media screen {
+	main .icon-mail:before,
+	main .mail:before {
+		content: "";
+		display: inline-block;
+		background: url("https://img.icons8.com/ios-filled/50/000000/important-mail.png") no-repeat left center;
+		background-size: .8em;
+		padding-right: 15px;
+		height: .8em;
+		width: .8em;
+	}
+}
+
+.staff h2.teaching:before {
+	content: "";
+	display: inline-block;
+	background-repeat: no-repeat;
+	background: url("https://img.icons8.com/ios-glyphs/30/000000/student-center.png");
+	background-size: 1em 1em;
+	height: 1em;
+	width: 1em;
+	margin-right: .2em;
+	margin-bottom: -0.1em;
+}
+
+.staff h2.jobs:before {
+	content: "";
+	display: inline-block;
+	background-repeat: no-repeat;
+	background: url("https://img.icons8.com/carbon-copy/100/000000/resume.png");
+	background-size: 1em 1em;
+	height: 1em;
+	width: 1em;
+	margin-right: .2em;
+	margin-bottom: -0.1em;
+}
+
+.staff h2.publications:before {
+	content: "";
+	display: inline-block;
+	background-repeat: no-repeat;
+	background: url("https://img.icons8.com/carbon-copy/100/000000/news.png");
+	background-size: 1em 1em;
+	height: 1em;
+	width: 1em;
+	margin-right: .2em;
+	margin-bottom: -0.1em;
+}

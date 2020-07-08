@@ -1,15 +1,22 @@
 // variables
 
 // Colors
-$fg: rgb(33, 33, 33);
-$bg: rgb(255, 255, 255);
+$fg: rgba(33, 33, 33, 1);
+$fg-50: rgba(33, 33, 33, 0.5);
+$bg: rgb(204, 230, 255);
+$bg-navbar: rgb(75, 75, 75);
+$bg-warm: rgb(245, 245, 245);
 $coolGray: rgb(53, 43, 43);
 $selectedColor: rgb(32, 83, 36);
 $publicationColor: rgba(0, 0, 0, .87);
-
+$cardItemBoxShadow: rgb(51, 156, 255);
+$titleSeletedBoxShadow: rgb(153, 206, 255);
+$cardPeopleBoxShadow: rgb(153, 206, 255);
+$cardPeopleBoxShadow2: rgb(51, 156, 255);
 // Dimensions
 
 $mobileSize: 900px;
-
+$xLargeSize: 1280px;
 // Fonts
-$ff: "Lato", Helvetica, sans-serif;
+$ff: 'Raleway', sans-serif;
+//$ff: "Lato", Helvetica, sans-serif;
