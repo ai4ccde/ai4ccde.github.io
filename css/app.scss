@@ -30,6 +30,11 @@
 .header-headline {
 	flex: 1;
 	font-size: 1.4rem;
+
+	h1 {
+		font-size: 3rem;
+		font-weight: bold !important;
+	}
 }
 
 .header-explanation {
