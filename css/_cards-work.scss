@@ -34,7 +34,7 @@
 	padding: 0.75rem;
 	margin: 1rem;
 	border-radius: 0.25rem;
-	box-shadow: 0 20px 40px -14px $cardItemBoxShadow;
+	box-shadow: 0 10px 20px $cardItemBoxShadow, 0 6px 6px $cardItemBoxShadow2;
 }
 
 .card-item-work {
@@ -43,7 +43,7 @@
 	padding: 0.75rem;
 	margin: 1rem;
 	border-radius: 0.25rem;
-	box-shadow: 0 20px 40px -14px $cardItemBoxShadow;
+	box-shadow: 0 4px 8px -2px $cardItemBoxShadow;
 }
 
 .publication__cover {

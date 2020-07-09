@@ -3,16 +3,24 @@
 // Colors
 $fg: #04151f;
 $fg-50: rgba(33, 33, 33, 0.5);
-$bg: #313638;
+$bg: #edffec;
 $bg-navbar: #313638;
-$bg-card: #edffec;
+
+// $fg: rgba(16, 25, 53, 1);
+// $fg-50: rgba(16, 25, 53, 0.5);
+// $bg: #dbcbd8;
+// $bg-navbar: #564787;
+
+$bg-card: #f2fdff;
+
 $coolGray: rgb(53, 43, 43);
 $selectedColor: rgb(32, 83, 36);
 $publicationColor: rgba(0, 0, 0, .87);
-$cardItemBoxShadow: rgb(51, 156, 255);
-$titleSeletedBoxShadow: rgb(153, 206, 255);
-$cardPeopleBoxShadow: rgb(153, 206, 255);
-$cardPeopleBoxShadow2: rgb(51, 156, 255);
+$cardItemBoxShadow: rgb(204, 255, 201);
+$cardItemBoxShadow2: rgb(158, 255, 153);
+$titleSeletedBoxShadow: rgb(158, 255, 153);
+$cardPeopleBoxShadow: rgb(204, 255, 201);
+$cardPeopleBoxShadow2: rgb(158, 255, 153);
 // Dimensions
 
 $mobileSize: 900px;
