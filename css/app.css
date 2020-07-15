@@ -701,15 +701,15 @@ header .mobile-nav {
   padding: 0.75rem;
   margin: 1rem;
   border-radius: 0.25rem;
-  -webkit-box-shadow: 0 6px 12px #61e786, 0 6px 6px #61e786;
-          box-shadow: 0 6px 12px #61e786, 0 6px 6px #61e786;
+  -webkit-box-shadow: 0 4px 8px -2px #61e786;
+          box-shadow: 0 4px 8px -2px #61e786;
 }
 
 .card-item-work {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 22%;
           flex: 1 0 22%;
-  min-width: 300px;
+  min-width: 270px;
   padding: 0.75rem;
   margin: 1rem;
   border-radius: 0.25rem;
@@ -834,12 +834,12 @@ header .mobile-nav {
       -ms-flex: 1 0 20%;
           flex: 1 0 20%;
   background-color: #f2fdff;
-  min-width: 300px;
+  min-width: 270px;
   padding: 0.75rem;
   margin: 1rem;
   border-radius: 0.25rem;
-  -webkit-box-shadow: 0 20px 40px -14px #61e786;
-          box-shadow: 0 20px 40px -14px #61e786;
+  -webkit-box-shadow: 0 4px 8px -2px #61e786;
+          box-shadow: 0 4px 8px -2px #61e786;
 }
 
 /* Tabs  */
@@ -949,6 +949,8 @@ header .mobile-nav {
       -ms-flex-pack: center;
           justify-content: center;
   padding-bottom: 2rem;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .tab-buttons .tablinks:focus {
