@@ -5,30 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/app.css">
 
-    <style>
-      .observablehq {
-          opacity: 1;
-          transition: opacity 250ms ease-in-out;
-      }
-
-      .browser-firefox .observablehq {
-          transition: opacity 250ms ease-in-out 250ms;
-      }
-
-      .observablehq--running {
-          opacity: 0;
-      }
-
-      .os-ios #gradient {
-          filter: saturate(150%);
-          -webkit-filter: saturate(150%);
-      }
-  </style>
-
     <script src="/js/main.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
     <meta name="generator" content="AI4CC" />
     <title>AI4CC</title>
   </head>
@@ -46,7 +34,7 @@
           <div class="logos">
             <div class="nav-logo">
               <a class="nav-link" href="/">
-                <img class="nav-logo-img"   src="/img/other/logo-sk.svg" alt="Logo"/>
+                <img class="nav-logo-img"   src="/img/other/logo.png" alt="Logo"/>
               </a>
             </div>
             <div class="nav-logo">
@@ -73,10 +61,6 @@
 
     </header>
 
-    <div class="position-absolute w-100 h-100 overflow-hidden bg-cool-gray-1 bg-cover trbl-0" style="z-index:-1;pointer-events:none">
-      <div id="gradient" class="position-absolute d-flex justify-content-center align-items-center overflow-hidden trbl-0 observablehq--running" style="z-index:-1;pointer-events:none"></div>
-    </div>
-
   </div>
 
   <div class="all-content">
@@ -90,17 +74,6 @@
           <div class="header-explanation"> <h1 class="font-normal">Bringing state-of-the-art machine learning algorimths to critically ill patients</h1> </div>
 
           </section>
-      </div>
-    </div>
-
-
-
-    <div class="header-cards">
-      <div class="container color-white">
-        <!-- <hr class="hr-strong mb-1"> -->
-        <div class="card-headline-container">
-          <!-- <div class="header-card-headline mb-1"><h2 class="font-normal">Our Recent Works</h2></div> -->
-        </div>
       </div>
     </div>
 
@@ -255,260 +228,8 @@
       <div class="tablinks" onclick="openTab(event, 'algorithm')">Algorithms</div>
     </div>
 
-
-    
-      <!-- <div class="overflow-hidden">
-        <div class="accordion overflow-x-auto mb-n2 pb-n2">
-          <input class="tab-toggle" type="radio" name="tabs-card" id="tab_one" checked/>
-          <label for="tab_one">
-            <span class="tab-title">Application</span>
-            <div class="tab" id="tab_one_wrapper">
-
-
-              <div class="overflow-hidden">
-                <div class="overflow-x-auto mb-n2 pb-2">
-                  <div class="cards flex-nowrap">
-                    <div class="card-item publication__cover">
-                      <a href="/our-work/applications/object-detection-rcnn/">
-                      <div class="card">
-                        <div class="card-header">
-                          <h3>Mechanical Ventialtion</h3>
-                        </div>
-                        <div class="card-image position-relative green-bg" style="padding-bottom:100%">
-                          <img class="position-absolute trbl-0"
-                    src="/img/photos/work/1.jpg"
-                    alt="Card-1">
-                        </div>
-                      </div>
-                      </a>
-                    </div>
-              
-                    <div class="card-item publication__cover">
-                      <a href="/our-work/applications/object-detection-rcnn/">
-                      <div class="card">
-                        <div class="card-header">
-                          <h3>Lip Reading</h3>
-                        </div>
-                        <div class="card-image position-relative green-bg" style="padding-bottom:100%">
-                          <img class="position-absolute trbl-0"
-                    src="/img/photos/work/2.jpg"
-                    alt="Card-2">
-                        </div>
-                      </div>
-                      </a>
-                    </div>
-              
-                    <div class="card-item publication__cover">
-                      <a href="/our-work/applications/object-detection-rcnn/">
-                      <div class="card">
-                        <div class="card-header">
-                          <h3>Anomaly detection</h3>
-                        </div>
-                        <div class="card-image position-relative green-bg" style="padding-bottom:100%">
-                          <img class="position-absolute trbl-0"
-                    src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
-                    alt="Card-3">
-                        </div>
-                      </div>
-                      </a>
-                    </div>
-                    
-                    <div class="card-item publication__cover">
-                      <a href="/our-work/applications/object-detection-rcnn/">
-                      <div class="card">
-                        <div class="card-header">
-                          <h3>Sound processing in ICU</h3>
-                        </div>
-                        <div class="card-image position-relative" style="padding-bottom:100%">
-                          <img class="position-absolute trbl-0"
-                    src="/img/photos/work/1.jpg"
-                    alt="Card-4">
-                        </div>
-                      </div>
-                      </a>
-                    </div>
-                    
-                  </div>
-
-                </div>
-              </div>
-              
-            </div>
-          </label>
-
-          <input class="tab-toggle" type="radio" name="tabs-card" id="tab_two" />
-          <label for="tab_two">
-            <span class="tab-title">Algorithms</span>
-            <div class="tab" id="tab_two_wrapper">
-
-              <div class="overflow-hidden">
-                <div class="overflow-x-auto mb-n2 pb-2">
-                  <div class="cards flex-nowrap">
-                    <div class="card-item publication__cover">
-                      <a href="/our-work/applications/object-detection-rcnn/">
-                      <div class="card">
-                        <div class="card-header">
-                          <h3>Reinforcement Learning</h3>
-                        </div>
-                        <div class="card-image position-relative green-bg" style="padding-bottom:100%">
-                          <img class="position-absolute trbl-0"
-                  src="https://images.unsplash.com/photo-1528310263469-da619c84a9a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1284&q=80"
-                  alt="Card-1">
-                        </div>
-                      </div>
-                      </a>
-                    </div>
-              
-                    <div class="card-item publication__cover">
-                      <a href="/our-work/applications/object-detection-rcnn/">
-                      <div class="card">
-                        <div class="card-header">
-                          <h3>Deep Learning</h3>
-                        </div>
-                        <div class="card-image position-relative green-bg" style="padding-bottom:100%">
-                          <img class="position-absolute trbl-0"
-                  src="https://images.unsplash.com/photo-1516192518150-0d8fee5425e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=976&q=80"
-                  alt="Card-2">
-                        </div>
-                      </div>
-                      </a>
-                    </div>
-              
-                    <div class="card-item publication__cover">
-                      <a href="/our-work/applications/object-detection-rcnn/">
-                      <div class="card">
-                        <div class="card-header">
-                          <h3>NLP</h3>
-                        </div>
-                        <div class="card-image position-relative green-bg" style="padding-bottom:100%">
-                          <img class="position-absolute trbl-0"
-                  src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
-                  alt="Card-3">
-                        </div>
-                      </div>
-                      </a>
-                    </div>
-                    
-                    <div class="card-item publication__cover">
-                      <a href="/our-work/applications/object-detection-rcnn/">
-                      <div class="card">
-                        <div class="card-header">
-                          <h3>Computer Vision</h3>
-                        </div>
-                        <div class="card-image position-relative" style="padding-bottom:100%">
-                          <img class="position-absolute trbl-0"
-                  src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=933&q=80"
-                  alt="Card-4">
-                        </div>
-                      </div>
-                      </a>
-                    </div>
-                    
-                  </div>
-
-                </div>
-              </div>
-              
-            </div>
-           
-          </label>
-        </div>
-      </div> -->
-
-
-
-    <!-- <div class="header-window">
-      <div class="container">
-        <hr class="hr-strong">
-        <section class="header-pm header-container">
-          
-          <div class="header-headline mb-1"><h1 class="font-normal">Our Goal:</h1></div>
-          <div class="header-explanation mt-1"> <h1 class="balance-text font-normal" style="margin-left:-0.1rem;max-width:35rem">To bring state-of-the-art machine learning algorimths to critically ill patients.</h1> </div>
-          </section>
-      </div>
-    </div> -->
-
-
-
-
-  <!-- <main>
-    <section class="mt-2 mb-1">
-      <div class="container projects-1">
-        <h1>Other Projects</h1>
-        <hr class="hr-strong">
-        <div class="project-explanation mt-2 mb-1">
-          <p>New projects are coming</p>
-        </div>
-      </div>
-
-    </section>  
-
-    <section class="mt-2 mb-1">
-      <div class="container projects-1">
-        <h1>Other Projects</h1>
-        <hr class="hr-strong">
-        <div class="project-explanation mt-2 mb-1">
-          <p>New projects are coming</p>
-        </div>
-      </div>
-
-    </section>  
-
-    <section class="mt-2 mb-1">
-      <div class="container projects-1">
-        <h1>Other Projects</h1>
-        <hr class="hr-strong">
-        <div class="project-explanation mt-2 mb-1">
-          <p>New projects are coming</p>
-        </div>
-      </div>
-
-    </section>  
-
-    <section class="mt-2 mb-1">
-      <div class="container projects-1">
-        <h1>Other Projects</h1>
-        <hr class="hr-strong">
-        <div class="project-explanation mt-2 mb-1">
-          <p>New projects are coming</p>
-        </div>
-      </div>
-
-    </section>  
-
-    <section class="mt-2 mb-1">
-      <div class="container projects-1">
-        <h1>Other Projects</h1>
-        <hr class="hr-strong">
-        <div class="project-explanation mt-2 mb-1">
-          <p>New projects are coming</p>
-        </div>
-      </div>
-
-    </section>   -->
   </main>
-
   </div>
-
-    </div>
-<script type="module">
-  import {Runtime, Inspector, Library} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-  import notebook from "./js/home.js";
-  const renders = {
-  "gradient": "#gradient",
-  };
-  new Runtime(Object.assign(new Library)).module(notebook, name => {
-  const selector = renders[name];
-  if (selector) { // key exists
-      return new Inspector(document.querySelector(selector));
-  } else {
-      return true;
-  }
-  });
-</script>
-
-
-
-
+  </div>
   </body>
 </html>

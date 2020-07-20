@@ -4,31 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/app.css">
-
-    <style>
-      .observablehq {
-          opacity: 1;
-          transition: opacity 250ms ease-in-out;
-      }
-
-      .browser-firefox .observablehq {
-          transition: opacity 250ms ease-in-out 250ms;
-      }
-
-      .observablehq--running {
-          opacity: 0;
-      }
-
-      .os-ios #gradient {
-          filter: saturate(150%);
-          -webkit-filter: saturate(150%);
-      }
-  </style>
-
     <script src="/js/main.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <meta name="generator" content="AI4CC" />
     <title>AI4CC | Our Work | Object Detection with RCNN's</title>
   </head>
@@ -47,7 +31,7 @@
           <div class="logos">
             <div class="nav-logo">
               <a class="nav-link" href="/">
-                <img class="nav-logo-img"   src="/img/other/logo-sk.svg" alt="Logo"/>
+                <img class="nav-logo-img"   src="/img/other/logo.png" alt="Logo"/>
               </a>
             </div>
             <div class="nav-logo">
@@ -73,10 +57,6 @@
       </nav>
 
     </header>
-
-    <div class="position-absolute w-100 h-100 overflow-hidden bg-cool-gray-1 bg-cover trbl-0" style="z-index:-1;pointer-events:none">
-      <div id="gradient" class="position-absolute d-flex justify-content-center align-items-center overflow-hidden trbl-0 observablehq--running" style="z-index:-1;pointer-events:none"></div>
-    </div>
 
   </div>
 
@@ -120,11 +100,11 @@
                               </ol>
                             </aside>
                             <hr class="my-1 hr-strong d-m-none">
+                            <!-- <aside class="footnote-aside">This new object dete</aside> -->
                             <p>However, more recent approaches, like T5, have also shown that neural models, trained on large amounts of web-text, can also answer questions directly, without retrieving documents or facts from a knowledge graph. This has led to significant debate about how knowledge should be stored for use by our question answering systems — in human readable text and structured formats, or in the learned parameters of a neural network.</p>
-                            <aside class="footnote-aside">This new object detection architecture leverages contextual clues across time for each camera deployment in a network, improving recognition of objects in novel camera.</aside>
-                            <p>However, more recent approaches, like T5, have also shown that neural models, trained on large amounts of web-text, can also answer questions directly, without retrieving documents or facts from a knowledge graph. <sup class="footnote-ref"><a href="#fn-1" id="fnref-1">[1]</a></sup> This has led to significant debate about how knowledge should be stored for use by our question answering systems — in human readable text and structured formats, or in the learned parameters of a neural network.</p>
-                            <strong id="purpose">Purpose</strong>
-                            <p>Repeating processes ranging from natural cycles, such as phases of the moon or heartbeats and breathing, to artificial repetitive processes, like those found on manufacturing lines or in traffic patterns, are commonplace in our daily lives. Beyond just their prevalence, repeating processes are of interest to researchers for the variety of insights one can tease out of them. It may be that there is an underlying cause behind something that happens multiple times, or there may be gradual changes in a scene that may be useful for understanding. Sometimes, repeating processes provide us with unambiguous “action units”, semantically meaningful segments that make up an action. For example, if a person is chopping an onion, the action unit is the manipulation action that is repeated to produce additional slices. These units may be indicative of more complex activity and may allow us to analyze more such actions automatically at a finer time-scale without having a person annotate these units. For the above reasons, perceptual systems that aim to observe and understand our world for an extended period of time will benefit from a system that understands general repetitions.</p>
+                            
+                            <p>However, more recent approaches, like T5, have also shown that neural models, trained on large amounts of web-text, can also answer questions directly, without retrieving documents or facts from a knowledge graph. <sup class="footnote-ref"><a href="#fn-1" id="fnref-1">[1]</a></sup>   <span class="sidenote">This new object detection architecture leverages contextual clues across time for each camera deployment in a network, improving recognition of objects in novel camera. </span>  This has led to significant debate about how knowledge should be stored for use by our question answering systems — in human readable text and structured formats, or in the learned parameters of a neural network.</p>
+                            <strong id="purpose">Purpose</strong>                           <p>Repeating processes ranging from natural cycles, such as phases of the moon or heartbeats and breathing, to artificial repetitive processes, like those found on manufacturing lines or in traffic patterns, are commonplace in our daily lives. Beyond just their prevalence, repeating processes are of interest to researchers for the variety of insights one can tease out of them. It may be that there is an underlying cause behind something that happens multiple times, or there may be gradual changes in a scene that may be useful for understanding. Sometimes, repeating processes provide us with unambiguous “action units”, semantically meaningful segments that make up an action. For example, if a person is chopping an onion, the action unit is the manipulation action that is repeated to produce additional slices. These units may be indicative of more complex activity and may allow us to analyze more such actions automatically at a finer time-scale without having a person annotate these units. For the above reasons, perceptual systems that aim to observe and understand our world for an extended period of time will benefit from a system that understands general repetitions.</p>
                             <div class="img-holder">
                               <img border="0" src="https://1.bp.blogspot.com/-RzCBrCZykLE/XvDpz5viqyI/AAAAAAAAGIU/Ax43DDRjtWkeAZsepspakwUEGkshGsqQwCLcBGAsYHQ/s640/image9.png">
                             </div>
@@ -157,21 +137,6 @@
 
 </div>
 
-<script type="module">
-  import {Runtime, Inspector, Library} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-  import notebook from "/js/home.js";
-  const renders = {
-  "gradient": "#gradient",
-  };
-  new Runtime(Object.assign(new Library)).module(notebook, name => {
-  const selector = renders[name];
-  if (selector) { // key exists
-      return new Inspector(document.querySelector(selector));
-  } else {
-      return true;
-  }
-  });
-</script>
 
   </body>
 </html>
