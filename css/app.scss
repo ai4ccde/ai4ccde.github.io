@@ -170,3 +170,13 @@ p {
 .publication-item {
 	margin: 1rem 0;
 }
+
+@media (max-width: $mobileSize) {
+	.publication-lists {
+		margin: 1rem 0.2rem;
+	}
+
+	.publication-item {
+		margin: 1rem 0;
+	}
+}

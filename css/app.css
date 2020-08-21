@@ -764,7 +764,7 @@ header .nav-social-icons {
 
 @media (max-width: 900px) {
   .cards {
-    margin: 1rem 0.5rem;
+    margin: 1rem 0rem;
   }
 }
 
@@ -1474,5 +1474,14 @@ a {
 
 .publication-item {
   margin: 1rem 0;
+}
+
+@media (max-width: 900px) {
+  .publication-lists {
+    margin: 1rem 0.2rem;
+  }
+  .publication-item {
+    margin: 1rem 0;
+  }
 }
 /*# sourceMappingURL=app.css.map */
