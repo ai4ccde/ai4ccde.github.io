@@ -26,6 +26,7 @@
 	background-color: $bg;
 	flex: 1;
 	width: 0;
+	min-width: 0;
 }
 @media (max-width: $mobileSize) {
 	.all-content {
@@ -160,4 +161,12 @@ a {
 
 p {
 	// white-space: nowrap;
+}
+
+.publication-lists {
+	margin: 1rem 2rem;
+}
+
+.publication-item {
+	margin: 1rem 0;
 }
