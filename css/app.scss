@@ -22,6 +22,20 @@
 	}
 }
 
+.containe-work {
+	margin-right: 39px;
+	margin-left: 39px;
+	max-width: inherit;
+}
+
+@media (max-width: $mobileSize) {
+	.container-work {
+		margin-right: 0px;
+		margin-left: 0px;
+		max-width: inherit;
+	}
+}
+
 .all-content {
 	background-color: $bg;
 	flex: 1;
@@ -104,6 +118,11 @@
 
 .mb-2 {
 	margin-bottom: 2rem !important;
+}
+
+.mx-1 {
+	margin-left: 1rem !important;
+	margin-right: 1rem !important;
 }
 
 .pb-2 {

@@ -133,29 +133,32 @@ header {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		li {
+			list-style-type: none;
+		}
 	}
 }
 
 .icon-facebook {
 	background: url('/img/icons/facebook.svg');
-	height: 18px;
-	width: 18px;
+	height: 20px;
+	width: 20px;
 	display: block;
 	/* Other styles here */
 }
 
 .icon-twitter {
 	background: url('/img/icons/twitter.svg');
-	height: 18px;
-	width: 18px;
+	height: 20px;
+	width: 20px;
 	display: block;
 	/* Other styles here */
 }
 
 .icon-instagram {
 	background: url('/img/icons/instagram.svg');
-	height: 18px;
-	width: 18px;
+	height: 20px;
+	width: 20px;
 	display: block;
 	/* Other styles here */
 }
@@ -211,7 +214,7 @@ header {
 			bottom: 0;
 			top: 0;
 			margin: auto;
-			background-color: #4d61fc;
+			background-color: #206a20;
 			transition: opacity 0.25s ease, transform 0.25s ease;
 		}
 
@@ -313,16 +316,58 @@ header {
 			left: 50%;
 		}
 
+		.nav-social-icons {
+			opacity: 0;
+			visibility: hidden;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			flex-direction: row;
+			position: fixed;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+			background-color: #206a20;
+			transition: opacity 0.25s ease, transform 0.25s ease;
+			li {
+				margin: 10px;
+			}
+			margin-bottom: 1rem;
+		}
+
+		.state-opened-menu .nav-social-icons {
+			visibility: visible;
+			opacity: 1;
+		}
+
+		.nav-social-icon {
+			margin: 5px;
+		}
+
 		.icon-facebook {
-			display: none;
+			background: url('/img/icons/facebook.svg');
+			height: 25px;
+			width: 25px;
+			display: block;
+			/* Other styles here */
 		}
 
 		.icon-twitter {
-			display: none;
+			background: url('/img/icons/twitter.svg');
+			height: 25px;
+			width: 25px;
+			display: block;
+			/* Other styles here */
 		}
 
 		.icon-instagram {
-			display: none;
+			background: url('/img/icons/instagram.svg');
+			height: 25px;
+			width: 25px;
+			display: block;
+			/* Other styles here */
 		}
 	}
 }

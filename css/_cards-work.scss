@@ -18,6 +18,14 @@
 	.cards {
 		margin: 1rem 0rem;
 	}
+
+	.flex-nowrap-mobile {
+		flex-wrap: nowrap;
+	}
+
+	.disp-mb {
+		display: none;
+	}
 }
 
 .flex-nowrap {
@@ -30,8 +38,8 @@
 }
 
 .card-item {
-	flex: 1 1 25%;
-	min-width: 300px;
+	flex: 1 1 22%;
+	min-width: 280px;
 	padding: 0.75rem;
 	margin: 1rem;
 	border-radius: 0.25rem;
@@ -40,8 +48,17 @@
 }
 
 .card-item-work {
-	flex: 1 0 22%;
-	min-width: 270px;
+	flex: 1 1 22%;
+	min-width: 280px;
+	padding: 0.75rem;
+	margin: 1rem;
+	border-radius: 0.25rem;
+	box-shadow: 0 4px 8px -2px $cardItemBoxShadow;
+}
+
+.card-item-work-2 {
+	flex: 1 1 22%;
+	min-width: 280px;
 	padding: 0.75rem;
 	margin: 1rem;
 	border-radius: 0.25rem;
