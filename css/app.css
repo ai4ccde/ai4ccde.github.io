@@ -811,6 +811,10 @@ header .nav-social-icons li {
   text-align: center;
 }
 
+.tabcontent {
+  padding: 0 1px;
+}
+
 .cards-work {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1102,6 +1106,10 @@ header .nav-social-icons li {
   }
 }
 
+.tabcontent {
+  padding: 0 1px;
+}
+
 #algorithm {
   display: none;
 }
@@ -1137,7 +1145,7 @@ header .nav-social-icons li {
   letter-spacing: 0.2rem;
   padding: 20px;
   background-color: #ccffc9;
-  border-radius: 3px;
+  border-radius: 0 0 3px 3px;
   margin: 0 10px;
   line-height: 16px;
   z-index: 100;
@@ -1149,7 +1157,7 @@ header .nav-social-icons li {
     letter-spacing: 0.1rem;
     padding: 20px 15px;
     background-color: #ccffc9;
-    border-radius: 3px 3px 0 0;
+    border-radius: 0 0 3px 3px;
     margin: 0 5px;
     line-height: 16px;
   }
@@ -1536,7 +1544,7 @@ a {
 }
 
 .bg-cards {
-  border: 2px solid #429449;
+  border: 1px solid #429449;
   border-radius: 20px;
   z-index: 100;
   position: relative;
@@ -1555,6 +1563,7 @@ a {
 
 .no-background {
   background-color: #edffec;
+  z-index: -1;
 }
 
 .projects-1 {

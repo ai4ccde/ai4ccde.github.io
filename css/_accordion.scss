@@ -84,6 +84,10 @@
 	}
 }
 
+.tabcontent {
+	padding: 0 1px;
+}
+
 #algorithm {
 	display: none;
 }
@@ -115,7 +119,7 @@
 		padding: 20px;
 		background-color: $bg-unselected-button;
 		// box-shadow: 3px 3px 2px $titleSeletedBoxShadow;
-		border-radius: 3px;
+		border-radius: 0 0 3px 3px;
 		margin: 0 10px;
 		line-height: 16px;
 		z-index: 100;
@@ -129,7 +133,7 @@
 			background-color: $bg-unselected-button;
 			// color: $selectedColor;
 			// box-shadow: 3px 3px 2px $titleSeletedBoxShadow;
-			border-radius: 3px 3px 0 0;
+			border-radius: 0 0 3px 3px;
 			margin: 0 5px;
 			line-height: 16px;
 		}

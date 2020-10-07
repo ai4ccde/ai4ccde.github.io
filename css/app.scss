@@ -155,7 +155,7 @@ a {
 
 .bg-cards {
 	// background-color: $bg-cards;
-	border: 2px solid $bg-cards;
+	border: 1px solid $bg-cards;
 	border-radius: 20px;
 	z-index: 100;
 	position: relative;
@@ -173,6 +173,7 @@ a {
 
 .no-background {
 	background-color: $bg;
+	z-index: -1;
 }
 
 .projects-1 {
