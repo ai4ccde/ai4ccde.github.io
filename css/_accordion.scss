@@ -100,24 +100,25 @@
 
 	.tablinks:hover {
 		cursor: pointer;
-		opacity: 0.6;
+		opacity: 0.8;
 	}
 
 	.tablinks.active {
-		background-color: white;
-		box-shadow: 5px 5px 2px $titleSeletedBoxShadow;
+		background-color: $bg-cards;
+		color: white;
+		// box-shadow: 5px 5px 2px $titleSeletedBoxShadow;
 	}
 
 	.tablinks {
 		font-size: 1.3rem;
 		letter-spacing: 0.2rem;
 		padding: 20px;
-		background-color: $bg;
-		// color: $selectedColor;
-		box-shadow: 3px 3px 2px $titleSeletedBoxShadow;
-		border-radius: 3px 3px 0 0;
+		background-color: $bg-unselected-button;
+		// box-shadow: 3px 3px 2px $titleSeletedBoxShadow;
+		border-radius: 3px;
 		margin: 0 10px;
 		line-height: 16px;
+		z-index: 100;
 	}
 
 	@media (max-width: 900px) {
@@ -125,9 +126,9 @@
 			font-size: 1.2rem;
 			letter-spacing: 0.1rem;
 			padding: 20px 15px;
-			background-color: $bg;
+			background-color: $bg-unselected-button;
 			// color: $selectedColor;
-			box-shadow: 3px 3px 2px $titleSeletedBoxShadow;
+			// box-shadow: 3px 3px 2px $titleSeletedBoxShadow;
 			border-radius: 3px 3px 0 0;
 			margin: 0 5px;
 			line-height: 16px;

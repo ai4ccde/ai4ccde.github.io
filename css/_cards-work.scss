@@ -44,6 +44,7 @@
 	margin: 1rem;
 	border-radius: 0.25rem;
 	box-shadow: 0 4px 8px -2px $cardItemBoxShadow;
+	z-index: 100;
 	// box-shadow: 0 6px 12px $cardItemBoxShadow, 0 6px 6px $cardItemBoxShadow;
 }
 

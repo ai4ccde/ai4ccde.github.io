@@ -153,6 +153,20 @@ a {
 	color: $fg-50;
 }
 
+.bg-cards {
+	// background-color: $bg-cards;
+	border: 2px solid $bg-cards;
+	border-radius: 20px;
+	z-index: 100;
+	position: relative;
+}
+
+@media (max-width: $mobileSize) {
+	.bg-cards {
+		border-radius: 10px;
+	}
+}
+
 .no-shadow {
 	box-shadow: none;
 }
@@ -198,4 +212,23 @@ p {
 	.publication-item {
 		margin: 1rem 0;
 	}
+}
+
+canvas {
+	display: block;
+	// vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	// background-color: #b61924;
+	background-image: url("");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	z-index: 10;
 }

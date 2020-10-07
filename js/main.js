@@ -11,6 +11,11 @@ navIcon.addEventListener('click', () => {
 	body.classList.toggle('state-fixed-body');
 });
 
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('particles-js', '/js/particles.json', function() {
+	console.log('callback - particles.js config loaded');
+});
+
 function openTab(evt, tabName) {
 	// Declare all variables
 	var i, tabcontent, tablinks;
