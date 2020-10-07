@@ -861,6 +861,7 @@ header .nav-social-icons li {
   min-width: 280px;
   padding: 0.75rem;
   margin: 1rem;
+  z-index: 100;
   border-radius: 0.25rem;
   -webkit-box-shadow: 0 4px 8px -2px #61e786;
           box-shadow: 0 4px 8px -2px #61e786;
@@ -873,6 +874,7 @@ header .nav-social-icons li {
   min-width: 280px;
   padding: 0.75rem;
   margin: 1rem;
+  z-index: 100;
   border-radius: 0.25rem;
   -webkit-box-shadow: 0 4px 8px -2px #61e786;
           box-shadow: 0 4px 8px -2px #61e786;
@@ -931,6 +933,7 @@ header .nav-social-icons li {
   padding: 1rem 0.5rem;
   margin: 1rem 0.5rem;
   background-color: #fafafa;
+  z-index: 100;
   -webkit-box-shadow: 0 3px 6px #ccffc9, 0 3px 3px #9eff99;
           box-shadow: 0 3px 6px #ccffc9, 0 3px 3px #9eff99;
 }
@@ -998,6 +1001,7 @@ header .nav-social-icons li {
   background-color: #f2fdff;
   padding: 0.75rem;
   margin: 1rem;
+  z-index: 100;
   border-radius: 0.25rem;
   -webkit-box-shadow: 0 4px 8px -2px #61e786;
           box-shadow: 0 4px 8px -2px #61e786;
