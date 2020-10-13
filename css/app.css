@@ -811,10 +811,6 @@ header .nav-social-icons li {
   text-align: center;
 }
 
-.tabcontent {
-  padding: 0 1px;
-}
-
 .cards-work {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
