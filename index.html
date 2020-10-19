@@ -14,9 +14,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/dist/aos.css" />
 
     <script src="/js/main.js" defer></script>
     <script src="/js/particles.js"></script>
+    <script src="/dist/aos.js"></script>
+
+
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -84,28 +88,29 @@
 
   <div class="all-content">
 
+
             <!-- particles.js container -->
             <div id="particles-js"></div>
-
 
 
     <div class="header-window">
       <div class="container">
         <hr class="hr-strong">
         <section class="header-pm header-container">
-          <div class="header-headline"><h1 class="">Artificial Intelligence for Critical Care</h1></div>
+          <div class="header-headline" data-aos="fade-up"><h1 class="">Artificial Intelligence for Critical Care</h1></div>
+          <div class="header-explanation" data-aos="fade-up" data-aos-delay="200"> <h1 class="font-normal">Bringing state-of-the-art machine learning algorimths to critically ill patients</h1> </div>
           
-          <div class="header-explanation"> <h1 class="font-normal">Bringing state-of-the-art machine learning algorimths to critically ill patients</h1> </div>
-
           </section>
       </div>
     </div>
 
     <!-- <div class="accordion overflow-hidden"> -->
-      <div id="application" class="tabcontent">
-        <div class="overflow-hidden bg-cards">
-          <div class="overflow-x-auto mb-n2 pb-2 ">
-            <div class="cards flex-nowrap">
+      
+      <div id="application" class="tabcontent" data-aos="fade-up" data-aos-delay="400"  >
+        
+        <div class="overflow-hidden bg-cards" >
+          <div class="overflow-x-auto mb-n2 pb-2" >
+            <div class="cards flex-nowrap" >
               <div class="card-item publication__cover">
                 <a href="/our-work/applications/object-detection-rcnn/">
                 <div class="card">
@@ -120,7 +125,8 @@
                 </div>
                 </a>
               </div>
-        
+            
+
               <div class="card-item publication__cover">
                 <a href="/our-work/applications/object-detection-rcnn/">
                 <div class="card">
@@ -169,14 +175,14 @@
             </div>
 
           </div>
-        </div>
       </div>
+    </div>
 
-      <div id="algorithm" class="tabcontent">
+      <div id="algorithm" class="tabcontent" >
 
-        <div class="overflow-hidden bg-cards">
+        <div class="overflow-hidden bg-cards" data-aos="fade-up" data-aos-delay="400">
           <div class="overflow-x-auto mb-n2 pb-2 ">
-            <div class="cards flex-nowrap">
+            <div class="cards flex-nowrap" >
               <div class="card-item publication__cover">
                 <a href="/our-work/applications/object-detection-rcnn/">
                 <div class="card">
@@ -247,7 +253,7 @@
     <!-- </div> -->
 
     <!-- Tab links -->
-    <div class="tab-buttons">
+    <div class="tab-buttons" data-aos="fade-up" data-aos-delay="600" >
       <div class="tablinks active" onclick="openTab(event, 'application')">Applications</div>
       <div class="tablinks" onclick="openTab(event, 'algorithm')">Algorithms</div>
     </div>

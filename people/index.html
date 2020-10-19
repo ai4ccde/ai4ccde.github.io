@@ -13,10 +13,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/dist/aos.css" />
     
 
     <script src="/js/main.js" defer></script>
     <script src="/js/particles.js"></script>
+    <script src="/dist/aos.js"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -86,9 +89,10 @@
     <div class="header-window">
       <div class="container">
         <!-- <hr class="hr-strong"> -->
-        <section class="header-pm header-container">
-          <div class="header-headline font-normal"><h1>Our People</h1></div>
-          <div class="header-explanation font-normal"> <h2 class="balance-text font-normal">We come from different backgrounds, but we we share a common vision.</h2> </div>
+        <section class="header-pm header-container">    
+            <div class="header-headline font-normal" data-aos="fade-up"><h1>Our People</h1></div>
+            <div class="header-explanation font-normal" data-aos="fade-up" data-aos-delay="200"> <h2 class="balance-text font-normal">We come from different backgrounds, but we we share a common vision.</h2> </div>
+
           </section>
           
       </div>
@@ -98,74 +102,82 @@
       <div class="container no-margin">
 
 
-
+       
     <!-- start of people        -->    
       <div class="container no-margin">
           <!-- <div class="headline">
             <h2>Steering Committee </h2>
           </div>
           <hr class="hr-bold"> -->
-          <div class="container color-white no-margin">
-            <hr class="hr-strong mb-1">
-            <div class="card-headline-container">
-              <div class="header-card-headline mb-1"><h1>Steering Committee</h1></div>
+        <div class="container color-white no-margin">
+          <hr class="hr-strong mb-1">
+          <div class="card-headline-container">
+            <div class="header-card-headline mb-1" data-aos="fade-up" data-aos-delay="400">
+              <h1>Steering Committee</h1></div>=
+          </div>
+        </div>
+        
+      
+      
+          <div class="cards-persons">
+
+            
+          <div class="card-item-person" data-aos="fade-up" data-aos-delay="600">
+            
+            <a href="/people/scientific-staff/martin-goodfellow/">
+            <div class="card">
+              <div class="card-header">
+                <h3>Lukas Martin</h3>
+              </div>
+              <div class="card-image position-relative green-bg" style="padding-bottom:100%">
+                <img class="position-absolute trbl-0"
+            src="/img/photos/work/1.jpg"
+            alt="Card-1">
+              </div>
             </div>
+            </a>
           </div>
 
+
+
+          <div class="card-item-person" data-aos="fade-up" data-aos-delay="600">
+            <a href="/people/scientific-staff/martin-goodfellow/">
+            <div class="card">
+              <div class="card-header">
+                <h3>Arne Peine</h3>
+              </div>
+              <div class="card-image position-relative green-bg" style="padding-bottom:100%">
+                <img class="position-absolute trbl-0"
+          src="/img/photos/work/2.jpg"
+          alt="Card-2">
+              </div>
+            </div>
+            </a>
+          </div>
+    
+          <div class="card-item-person" data-aos="fade-up" data-aos-delay="600">
+            <a href="/people/scientific-staff/martin-goodfellow/">
+            <div class="card">
+              <div class="card-header">
+                <h3>Anke Schmeink</h3>
+              </div>
+              <div class="card-image position-relative green-bg" style="padding-bottom:100%">
+                <img class="position-absolute trbl-0"
+          src="/img/photos/work/3.jpg"
+          alt="Card-3">
+              </div>
+            </div>
+            </a>
+          </div>
           
-          <div class="cards-persons">
-            <div class="card-item-person">
-              <a href="/people/scientific-staff/martin-goodfellow/">
-              <div class="card">
-                <div class="card-header">
-                  <h3>Lukas Martin</h3>
-                </div>
-                <div class="card-image position-relative green-bg" style="padding-bottom:100%">
-                  <img class="position-absolute trbl-0"
-              src="/img/photos/work/1.jpg"
-              alt="Card-1">
-                </div>
-              </div>
-              </a>
-            </div>
-      
-            <div class="card-item-person">
-              <a href="/people/scientific-staff/martin-goodfellow/">
-              <div class="card">
-                <div class="card-header">
-                  <h3>Arne Peine</h3>
-                </div>
-                <div class="card-image position-relative green-bg" style="padding-bottom:100%">
-                  <img class="position-absolute trbl-0"
-            src="/img/photos/work/2.jpg"
-            alt="Card-2">
-                </div>
-              </div>
-              </a>
-            </div>
-      
-            <div class="card-item-person">
-              <a href="/people/scientific-staff/martin-goodfellow/">
-              <div class="card">
-                <div class="card-header">
-                  <h3>Anke Schmeink</h3>
-                </div>
-                <div class="card-image position-relative green-bg" style="padding-bottom:100%">
-                  <img class="position-absolute trbl-0"
-            src="/img/photos/work/3.jpg"
-            alt="Card-3">
-                </div>
-              </div>
-              </a>
-            </div>
-            
-            <div class="card-item-person no-shadow no-background"></div>
-            <div class="card-item-person no-shadow no-background"></div>
-            <div class="card-item-person no-shadow no-background"></div>
+          <div class="card-item-person no-shadow no-background"></div>
+          <div class="card-item-person no-shadow no-background"></div>
+          <div class="card-item-person no-shadow no-background"></div>
           </div>
         
-      </div>
-
+      
+      
+    </div>
 
           <!-- start of people        -->    
           <div class="container no-margin">
@@ -176,13 +188,13 @@
             <div class="container color-white no-margin">
               <hr class="hr-strong mb-1">
               <div class="card-headline-container">
-                <div class="header-card-headline mb-1"><h1>PhD Candidates</h1></div>
+                <div class="header-card-headline mb-1" data-aos="fade-up"><h1>PhD Candidates</h1></div>
               </div>
             </div>
 
             
             <div class="cards-persons">
-              <div class="card-item-person">
+              <div class="card-item-person" data-aos="fade-up"  >
                 <a href="/people/scientific-staff/martin-goodfellow/">
                 <div class="card">
                   <div class="card-header">
@@ -197,7 +209,7 @@
                 </a>
               </div>
         
-              <div class="card-item-person">
+              <div class="card-item-person" data-aos="fade-up" >
                 <a href="/people/scientific-staff/martin-goodfellow/">
                 <div class="card">
                   <div class="card-header">
@@ -212,7 +224,7 @@
                 </a>
               </div>
         
-              <div class="card-item-person">
+              <div class="card-item-person" data-aos="fade-up" >
                 <a href="/people/scientific-staff/martin-goodfellow/">
                 <div class="card">
                   <div class="card-header">
@@ -227,7 +239,7 @@
                 </a>
               </div>
               
-              <div class="card-item-person">
+              <div class="card-item-person" data-aos="fade-up" >
                 <a href="/people/scientific-staff/martin-goodfellow/">
                 <div class="card">
                   <div class="card-header">
@@ -242,7 +254,7 @@
                 </a>
               </div>
     
-              <div class="card-item-person">
+              <div class="card-item-person" data-aos="fade-up" >
                 <a href="/people/scientific-staff/martin-goodfellow/">
                 <div class="card">
                   <div class="card-header">
@@ -257,7 +269,7 @@
                 </a>
               </div>
 
-              <div class="card-item-person">
+              <div class="card-item-person" data-aos="fade-up" >
                 <a href="/people/scientific-staff/martin-goodfellow/">
                 <div class="card">
                   <div class="card-header">

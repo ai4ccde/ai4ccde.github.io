@@ -3,6 +3,10 @@ const navLinks = document.querySelector('.nav-links');
 const links = document.querySelector('.nav-links li');
 const navIcon = document.querySelector('#nav-icon');
 const body = document.querySelector('body');
+const tabButton = document.querySelector('.tab-buttons');
+const cardItemPerson = document.querySelectorAll('card-item-person')
+var w = window.innerWidth;
+
 
 navIcon.addEventListener('click', () => {
 	navIcon.classList.toggle('open');
@@ -35,3 +39,15 @@ function openTab(evt, tabName) {
 	document.getElementById(tabName).style.display = 'block';
 	evt.currentTarget.className += ' active';
 }
+
+AOS.init({
+	duration: 500,
+	once: true,
+  })
+
+  console.log("outside:" + w) ;
+ if (w < 900){
+	tabButton.setAttribute('data-aos-delay','0');
+	cardItemPerson.setAttribute('data-aos-delay','0');
+	console.log("inside");
+ }

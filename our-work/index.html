@@ -13,8 +13,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/dist/aos.css" />
+
     <script src="/js/main.js" defer></script>
     <script src="/js/particles.js"></script>
+    <script src="/dist/aos.js"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -85,8 +89,12 @@
       <div class="container">
         <hr class="hr-strong">
         <section class="header-pm header-container">
-          <div class="header-headline font-normal"><h1>Our Recent Works</h1></div>
-          <div class="header-explanation font-normal"> <h2 class="balance-text font-normal">These are the works we have done so far.</h2> </div>
+          <div class="item" data-aos="fade-up">
+            <div class="header-headline font-normal"><h1>Our Recent Works</h1></div>
+          </div>
+          <div class="item" data-aos="fade-up" data-aos-delay="200">
+            <div class="header-explanation font-normal"> <h2 class="balance-text font-normal">These are the works we have done so far.</h2> </div>
+          </div>
           </section>
           
       </div>
@@ -98,12 +106,13 @@
         <div class="container color-white no-margin">
           <hr class="hr-strong mb-1 mx-1">
           <div class="card-headline-container">
-            <div class="header-card-headline mb-1"><h1>Applications</h1></div>
+              <div class="header-card-headline mb-1" data-aos="fade-up" data-aos-delay="400"><h1>Applications</h1>
+              </div>
           </div>
         </div>
 
 
-        <div id="application-work">
+        <div id="application-work" data-aos="fade-up" data-aos-delay="600">
           <div class="overflow-hidden">
             <div class="overflow-x-auto mb-n2 pb-2">
               <div class="cards flex-nowrap-mobile">
@@ -203,11 +212,11 @@
         <div class="container color-white no-margin">
           <hr class="hr-strong mb-1 mx-1">
           <div class="card-headline-container">
-            <div class="header-card-headline mb-1"><h1>Algorithms</h1></div>
+            <div class="header-card-headline mb-1" data-aos="fade-up"><h1>Algorithms</h1></div>
           </div>
         </div>
 
-        <div id="algorithm-work">
+        <div id="algorithm-work" data-aos="fade-up" data-aos-delay="200">
           <div class="overflow-hidden">
             <div class="overflow-x-auto mb-n2 pb-2">
               <div class="cards flex-nowrap-mobile">

@@ -1120,6 +1120,7 @@ header .nav-social-icons li {
   padding-bottom: 2rem;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
+  z-index: 100;
 }
 
 .tab-buttons .tablinks:focus {
@@ -1611,6 +1612,6 @@ canvas {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  z-index: 10;
+  z-index: auto;
 }
 /*# sourceMappingURL=app.css.map */
