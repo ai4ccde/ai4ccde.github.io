@@ -173,7 +173,6 @@ a {
 
 .no-background {
 	background-color: $bg;
-	z-index: -1;
 }
 
 .projects-1 {
@@ -191,10 +190,6 @@ a {
 	.d-m-none {
 		display: none !important;
 	}
-}
-
-p {
-	// white-space: nowrap;
 }
 
 .publication-lists {
@@ -231,5 +226,5 @@ canvas {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 50%;
-	z-index: auto;
+	z-index: 0;
 }

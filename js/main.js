@@ -43,11 +43,11 @@ function openTab(evt, tabName) {
 AOS.init({
 	duration: 500,
 	once: true,
+	offset: 150,
   })
 
-  console.log("outside:" + w) ;
+
  if (w < 900){
 	tabButton.setAttribute('data-aos-delay','0');
 	cardItemPerson.setAttribute('data-aos-delay','0');
-	console.log("inside");
  }
