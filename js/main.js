@@ -3,8 +3,6 @@ const navLinks = document.querySelector('.nav-links');
 const links = document.querySelector('.nav-links li');
 const navIcon = document.querySelector('#nav-icon');
 const body = document.querySelector('body');
-const tabButton = document.querySelector('.tab-buttons');
-const cardItemPerson = document.querySelectorAll('card-item-person')
 var w = window.innerWidth;
 
 
@@ -39,15 +37,27 @@ function openTab(evt, tabName) {
 	document.getElementById(tabName).style.display = 'block';
 	evt.currentTarget.className += ' active';
 }
-
 AOS.init({
 	duration: 500,
 	once: true,
-	offset: 150,
-  })
+	offset: 50,
+  });
 
 
  if (w < 900){
-	tabButton.setAttribute('data-aos-delay','0');
-	cardItemPerson.setAttribute('data-aos-delay','0');
- }
+	AOS.init({
+		duration: 500,
+		once: true,
+		offset: -100,
+	  });
+
+} else{
+	AOS.init({
+		duration: 500,
+		once: true,
+		offset: 150,
+	  })
+	
+
+}
+
