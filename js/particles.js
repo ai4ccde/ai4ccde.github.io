@@ -1388,7 +1388,7 @@ window.particlesJS.load = function(tag_id, path_config_json, callback) {
 		if (xhr.readyState == 4) {
 			if (xhr.status == 200) {
 				var params = JSON.parse(data.currentTarget.response);
-				params.particles.number.value = Math.floor(w * 0.1);
+				params.particles.number.value = Math.floor(w * 0.07);
 				window.particlesJS(tag_id, params);
 				if (callback) callback();
 			} else {

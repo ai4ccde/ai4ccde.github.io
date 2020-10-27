@@ -88,15 +88,25 @@
 	padding: 0 1px;
 }
 
+@media (max-width: 900px) {
+	.tabcontent {
+		padding: 0 0;
+	}
+}
+
 #algorithm {
 	display: none;
+}
+
+#accordion {
+	padding-bottom: 2rem;
 }
 
 .tab-buttons {
 	// position: relative;
 	display: flex;
 	justify-content: center;
-	padding-bottom: 2rem;
+	// padding-bottom: 2rem;
 	transition-duration: 1s;
 	z-index: 100;
 
